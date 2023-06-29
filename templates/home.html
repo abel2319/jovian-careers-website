@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jovian Careers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../static/styles/home.css" />
   </head>
   <body>
-    <div id="container">
-      <h1>
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">
         Jovian Careers
       </h1>
-      <img id="banner" src="../static/images/banner.jpg" height="320px">
-      <h2>About Jovian</h2>
-      <p class="bodytext">
+      <img class="img-fluid" id="banner" src="../static/images/banner.jpg" height="320px">
+      <h2 class="text-center mt-2 mb-4">About Jovian</h2>
+      <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper quam vel tortor fringilla scelerisque. Donec vestibulum porttitor elementum. Nunc lacinia at tellus at posuere. Sed augue elit, pharetra sed leo eget, cursus porta tellus. Nulla ultricies ex velit, in sollicitudin nulla scelerisque id. Aliquam sed bibendum dui, eget porta nulla. Proin ornare quam purus, eu accumsan mi mattis vitae. Praesent euismod ante nec mi vestibulum pellentesque. Etiam ut lectus ac sem volutpat gravida. Donec nec felis blandit, sagittis nisl id, fermentum velit.
       </p>
-      <h2>Open Positions</h2>
+      <h2 class="text-center mt-3 mb-4">Open Positions</h2>
+      <div>
+        {% for job in jobs %}
+          {% include 'homejob.html' %}
+        {% endfor %}
+      </div>
       <p>TODO - Show the jobs here</p>
-      <div id="butt">
-        <button>Contac Us</button>
-        <p>Copyright 2023, Javian</p>
+      <div id="butt" class="text-center">
+        <button class="btn btn-primary btn-lg">Contact Us</button>
+        <p class="mt-4">Copyright 2023, Jovian</p>
       </div>
     </div>
   </body>

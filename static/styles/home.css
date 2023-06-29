@@ -1,4 +1,4 @@
-#container{
+/*#container{
   max-width: 720px;
   margin: 0 auto;
 }
@@ -9,7 +9,7 @@ h1{
   font-weight: normal;
   color: rgb(50, 50, 50);
   text-align: center;
-}
+}*/
 
 #banner{
   width: 100%;
@@ -17,7 +17,7 @@ h1{
   object-fit: cover;
 }
 
-h2{
+/*h2{
   font-size: 32px;
   font-family: Roboto;
   font-weight: normal;
@@ -32,4 +32,4 @@ h2{
 .bodytext{
   font-family: Roboto;
   color: rgb(80, 80, 80);
-}
+}*/
