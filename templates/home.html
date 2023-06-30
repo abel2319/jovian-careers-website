@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../static/styles/home.css" />
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class="container">
       <h1 class="text-center mt-2 mb-4">
         Jovian Careers
@@ -25,8 +26,10 @@
       </div>
       <p>TODO - Show the jobs here</p>
       <div id="butt" class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2023, Jovian</p>
+        <a href="mailto:contact@hello.world?subject=Further%20informations%20about%20a%20Job&body=My%20name%20%3A%20%3Cyour%20name%3E%0D%0AMy%20question%20%3A%20%3Cquestion%20here%3E" type="button" class="btn btn-primary btn-lg">Contact Us</a>
+      </div>
+      <div>
+        {% include 'footer.html' %}
       </div>
     </div>
   </body>
